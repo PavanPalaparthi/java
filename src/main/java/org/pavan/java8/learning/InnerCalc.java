@@ -7,15 +7,15 @@ import java.util.function.Supplier;
  */
 public class InnerCalc {
 
-    public boolean getValue(Supplier<String> supplier, String maString) {
+    public boolean getValue(Supplier<String> supplier, String myString) {
         String supp = supplier.get();
-        if (supp.contains(maString)) {
-            System.out.println("Yahouuu on est en " + maString);
+        if (supp.contains(myString)) {
+            System.out.println("my string " + myString);
         } else {
             String subSequence = (String) supp.subSequence(0, 2);
 //            System.out.println(subSequence.contains((String)maString.subSequence(0, 2)));
-            System.out.println("Oupppss on n'as pas la valeur : " + maString + " dans : " + supp);
+            System.out.println("My string is : " + myString + " supp : " + supp);
         }
-        return supp.contains(maString);
+        return supp.contains(myString);
     }
 }
