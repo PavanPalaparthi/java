@@ -15,7 +15,7 @@ public class JsEngine {
         try {
             engine.eval("function sum(a, b) { return a+b; }");
             System.out.println(engine.eval("sum(1, 2);"));
-            System.out.println("Adding two numbers using javascript");
+            System.out.println("Adding two numbers using javascript in Java 8");
         } catch (ScriptException e) {
             e.printStackTrace();
         }
